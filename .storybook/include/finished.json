@@ -1,0 +1,10 @@
+[
+  {
+    "name": "List",
+    "path": "components/List/List.story.tsx"
+  },
+  {
+    "name": "ListItem",
+    "path": "components/List/ListItem/ListItem.story.tsx"
+  }
+]

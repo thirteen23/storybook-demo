@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./ListItem.scss";
+import "./BookView.scss";
 
-export const ListItem = (props: IProps) => {
-  const { title, value, className = "", onClick } = props;
+export const BookView = (props: IProps) => {
+  const { title, author, className = "", onClick } = props;
 
   const clickHandler = () => {
     if(onClick != null) {
-      onClick({title, value});
+      onClick({title, author});
     }
   }
   
@@ -17,7 +17,7 @@ export const ListItem = (props: IProps) => {
       {title}
       </h2>
       <p className="list-item__value">
-        {value}
+        {author}
       </p>
     </div>
   );
@@ -25,16 +25,14 @@ export const ListItem = (props: IProps) => {
 
 export interface IProps {
   /**
-   * Title of the item.
-   * @default ""
+   * Title of the book.
    */
   title: string;
 
   /**
-   * Value of the item.
-   * @default ""
+   * Author of the book.
    */
-  value: string;
+  author: string;
 
   /**
    * Additional classname(s) of element.
@@ -45,5 +43,5 @@ export interface IProps {
   /**
    * Callback to be invoked when item is clicked
    */
-  onClick?: ({ title, value }) => void;
+  onClick?: (data: { title: string; author: string; }) => void;
 }

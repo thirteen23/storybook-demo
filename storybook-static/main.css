@@ -1,0 +1,209 @@
+@font-face {
+  font-family: grotesk;
+  font-weight: 400;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 500;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 700;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 300;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Light.otf") format("opentype"); }
+
+/*** Text Utilities ***/
+.prop-table {
+  background: red; }
+
+.prop-table table {
+  width: 100%; }
+
+.prop-table th {
+  font-family: grotesk;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 0.25px;
+  margin: 0;
+  margin: initial;
+  padding: 5px 10px; }
+
+@media (max-width: 639px) {
+  .prop-table th {
+    font-size: 1rem;
+    letter-spacing: 0; } }
+
+.prop-table td {
+  font-family: grotesk;
+  font-weight: 300;
+  font-size: 0.875rem;
+  letter-spacing: 0.25px;
+  margin: 0;
+  margin: initial;
+  padding: 5px 10px; }
+
+.prop-table table, .prop-table th, .prop-table td {
+  border: 1px solid #ABB5BE;
+  border-collapse: collapse; }
+
+.prop-table tr:nth-child(even) {
+  background: #FAFAFA; }
+
+.prop-table .story-link {
+  font-family: grotesk;
+  font-weight: 700;
+  font-size: 0.875em;
+  letter-spacing: 0.25px;
+  margin: 0;
+  margin: initial;
+  cursor: pointer;
+  color: #6ED2FA; }
+
+.prop-table .story-link:hover {
+  text-decoration: underline; }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 400;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 500;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 700;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 300;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Light.otf") format("opentype"); }
+
+/*** Text Utilities ***/
+.ecl-btn {
+  font-family: grotesk;
+  font-weight: 700;
+  font-size: 0.875em;
+  letter-spacing: 0.25px;
+  margin: 0;
+  margin: initial;
+  padding: 10px 21px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: sans-serif; }
+
+.ecl-btn.primary {
+  background: #6ED2FA;
+  color: #FFFFFF;
+  transition: background 0.2s; }
+
+.ecl-btn.primary:hover {
+  background: #D2F2FF;
+  outline: none; }
+
+.ecl-btn.primary:active, .ecl-btn.primary:focus {
+  outline: none;
+  background: #F2F8FC; }
+
+.ecl-btn.primary.disabled {
+  background: #DEE1E5;
+  cursor: not-allowed;
+  pointer-events: none; }
+
+.btn-unstyled {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer; }
+
+.btn-unstyled:focus {
+  outline: none; }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 400;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 500;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 700;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 300;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Light.otf") format("opentype"); }
+
+/*** Text Utilities ***/
+.list-item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+  padding: 5px 35px;
+  background: #FBFCFC;
+  cursor: pointer;
+  border: 1px solid #5F6B77;
+  border-radius: 10px;
+  transition: background 0.3s;
+  font-family: sans-serif; }
+
+.list-item:hover {
+  background: #D2F2FF; }
+
+.list-item__title {
+  margin-right: 30px; }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 400;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 500;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 700;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: grotesk;
+  font-weight: 300;
+  src: url("/assets/fonts/grotesk/HKGrotesk-Light.otf") format("opentype"); }
+
+/*** Text Utilities ***/
+.list {
+  background: #F2F8FC;
+  padding: 30px;
+  color: #323237;
+  font-family: sans-serif; }
+
+.list__item__container {
+  padding: 15px 0px; }
+
+.list__list-item {
+  margin-bottom: 10px; }
+
+
+/*# sourceMappingURL=main.css.map*/

@@ -3,18 +3,17 @@
 $cell-padding: 5px 10px;
 
 .prop-table {
-  background: red;
+  font-family: sans-serif;
+
   table {
     width: 100%;
   }
 
   th {
-    @include style-body-large-bold;
     padding: $cell-padding;
   }
 
   td {
-    @include style-body-small;
     padding: $cell-padding;
   }
 
@@ -30,7 +29,6 @@ $cell-padding: 5px 10px;
   }
 
   .story-link {
-    @include style-link;
     color: $brand-primary;
   }
 }

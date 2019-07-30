@@ -1,9 +1,14 @@
+import * as React from "react";
+
 import { linkTo } from "@storybook/addon-links";
-import React from "react";
 
 import "./PropTable.scss";
 
 const Required = (props) => <span style={{ color: "red" }} {...props} />;
+
+const cellStyle =  {
+  border: "1px solid #AAAAAA"
+};
 
 export const PropTable = ({ propDefinitions }) => {
   const props = propDefinitions.map((definition) => {
@@ -35,35 +40,35 @@ export const PropTable = ({ propDefinitions }) => {
 
       const storyName = storyMatch[1];
       linkProps.story = storyName;
-
+      
       storyLink = (
-        <div className="story-link" onClick={linkTo(linkProps.kind, linkProps.story)}>{storyName}</div>
+        <div key={storyName} style={{color: "blue", cursor: "pointer"}} onClick={linkTo(linkProps.kind, linkProps.story)}>{storyName}</div>
       );
     }
 
     return (
       <tr key={property}>
-        <td>
+        <td style={cellStyle}>
           {property}
           {required ? <Required>*</Required> : null}
         </td>
-        <td>{propType.name}</td>
-        <td>{defaultValue}</td>
-        <td>{storyLink}</td>
-        <td>{description}</td>
+        <td style={cellStyle}>{propType.name}</td>
+        <td style={cellStyle}>{storyLink}</td>
+        <td style={cellStyle}>{defaultValue}</td>
+        <td style={cellStyle}>{description}</td>
       </tr>
     );
   });
 
   return (
     <div className="prop-table">
-      <table>
+      <table style={{width: "100%"}}>
         <thead>
           <tr>
             <th>Name</th>
             <th>Type</th>
-            <th>Default</th>
             <th>Story</th>
+            <th>Default</th>
             <th>Description</th>
           </tr>
         </thead>

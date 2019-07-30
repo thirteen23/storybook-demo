@@ -9,12 +9,10 @@
   font-family: sans-serif;
 }
 
-.list__item-container {
+.list__item__container {
   padding: 15px 0px;
 }
 
 .list__list-item {
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
 }

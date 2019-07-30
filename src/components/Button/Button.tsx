@@ -14,21 +14,9 @@ export const Button = (props: IProps) => {
 };
 
 export interface IProps {
-    /**
-     * Titles and actions of the links for the kebab menu
-     */
-    primary: boolean;
-    /**
-     * Header title of the alert
-     */
-    className: string;
-    
-    children: any;
-
-    /**
-     * Date of the alert
-     */
-    disabled: boolean;
-    
-    childProps: any;
+    children?: React.ReactNode;
+    className?: string;
+    primary?: boolean;
+    disabled?: boolean;
+    childProps?: any;
 }
