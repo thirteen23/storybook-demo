@@ -1,0 +1,36 @@
+@import "src/base";
+
+$cell-padding: 5px 10px;
+
+.prop-table {
+  background: red;
+  table {
+    width: 100%;
+  }
+
+  th {
+    @include style-body-large-bold;
+    padding: $cell-padding;
+  }
+
+  td {
+    @include style-body-small;
+    padding: $cell-padding;
+  }
+
+  table, th, td {
+    border: 1px solid $silver;
+    border-collapse: collapse;
+  }
+
+  tr {
+    &:nth-child(even) {
+      background: #FAFAFA;
+    }
+  }
+
+  .story-link {
+    @include style-link;
+    color: $brand-primary;
+  }
+}

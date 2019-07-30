@@ -1,0 +1,10 @@
+// Breakpoint based on Foundation standard media queries:
+// https://foundation.zurb.com/sites/docs/media-queries.html
+
+$small-width: 639px;
+
+@mixin small {
+  @media(max-width: #{$small-width}) {
+    @content;
+  }
+}

@@ -1,0 +1,20 @@
+@import "src/base";
+
+.list {
+  background: $brand-active;
+  padding: 30px;
+
+  color: $body-dark;
+
+  font-family: sans-serif;
+}
+
+.list__item-container {
+  padding: 15px 0px;
+}
+
+.list__list-item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

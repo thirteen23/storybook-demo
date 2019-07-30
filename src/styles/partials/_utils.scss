@@ -1,0 +1,46 @@
+$border: 1px solid $steel;
+
+/*** Text Utilities ***/
+@mixin no-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//Forces a text element to one line when empty
+@mixin has-height-when-empty {
+    &:after {
+      content: "\200b";
+      visibility: hidden;
+    }
+}
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin nav-dropdown {
+  background: $white;
+  border: $border;
+  border-radius: 5px;
+  min-width: 200px;
+
+  position: absolute;
+  top: 10px;
+
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05);
+
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+@mixin button-unstyled {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
