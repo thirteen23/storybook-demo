@@ -1,6 +1,7 @@
 {
   "name": "storybook-test",
   "version": "0.1.0",
+  "homepage": "https://thirteen23.github.io/storybook-demo",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.4.5",
@@ -25,7 +26,9 @@
     "storybook": "yarn publish-all start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-all": "yarn publish-all build-storybook -s public",
-    "publish-all": "STORYBOOK_PUBLISH_ALL=true"
+    "publish-all": "STORYBOOK_PUBLISH_ALL=true",
+    "predeploy": "yarn build-storybook",
+    "deploy": "gh-pages --dist storybook-static"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,10 +46,12 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^5.1.10",
     "@storybook/addon-actions": "^5.1.8",
     "@storybook/addon-info": "^5.1.8",
     "@storybook/addon-links": "^5.1.8",
     "@storybook/addons": "^5.1.8",
-    "@storybook/react": "^5.1.8"
+    "@storybook/react": "^5.1.8",
+    "gh-pages": "2.0"
   }
 }

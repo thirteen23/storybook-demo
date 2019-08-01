@@ -1,10 +1,10 @@
 [
   {
-    "name": "List",
-    "path": "components/List/List.story.tsx"
+    "name": "BookView",
+    "path": "components/BookList/BookList.story.tsx"
   },
   {
-    "name": "ListItem",
-    "path": "components/List/ListItem/ListItem.story.tsx"
+    "name": "BookListView",
+    "path": "components/BookView/BookView.story.tsx"
   }
 ]
