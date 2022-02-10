@@ -12,7 +12,7 @@
     "@storybook/addon-storysource": "^5.1.8",
     "babel-loader": "^8.0.6",
     "file-loader": "^4.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-docgen-typescript-loader": "^3.1.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
